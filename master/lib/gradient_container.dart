@@ -9,13 +9,16 @@ class GradientContainer extends StatelessWidget {
   @override
   Widget build(context) {
     return Container(
-        decoration: BoxDecoration(
-          gradient: LinearGradient(
-            colors: [color1, color2],
-            begin: Alignment.topLeft,
-            end: Alignment.bottomRight,
-          ),
+      decoration: BoxDecoration(
+        gradient: LinearGradient(
+          colors: [color1, color2],
+          begin: Alignment.topLeft,
+          end: Alignment.bottomRight,
         ),
-        child: Center(child: Image.asset("assets/images/dice-2.png")));
+      ),
+      child: Center(
+        child: Image.asset("assets/image/dado1png"),
+      ),
+    );
   }
 }
