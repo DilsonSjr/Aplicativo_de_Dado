@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'roladordedados.dart';
 
 class GradientContainer extends StatelessWidget {
   const GradientContainer(this.color1, this.color2, {super.key});
@@ -16,9 +17,7 @@ class GradientContainer extends StatelessWidget {
           end: Alignment.bottomRight,
         ),
       ),
-      child: Center(
-        child: Image.asset("assets/image/dado1png"),
-      ),
+      child: const Center(child: RoladorDeDados()),
     );
   }
 }
